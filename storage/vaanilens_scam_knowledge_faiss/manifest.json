@@ -1,0 +1,15 @@
+{
+  "index_type": "guidance",
+  "created_at_utc": "2026-10-27T06:59:37.811180+00:00",
+  "records_indexed": 8,
+  "embedding_model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+  "embedding_model_key": "mpnet",
+  "device": "cpu",
+  "batch_size": 32,
+  "normalized_embeddings": true,
+  "retrieval_score_note": "FAISS score is L2 distance for normalized embeddings; lower is closer, not a probability or confidence percentage.",
+  "data_policy": "Guidance index contains separate source-attributed guidance and must not be treated as labels for individual calls.",
+  "source_dataset_id": null,
+  "license": "Per-record source URLs and notes are stored in data/knowledge/scam_guidance.jsonl",
+  "input_file": "data\\knowledge\\scam_guidance.jsonl"
+}

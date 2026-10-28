@@ -1,0 +1,18 @@
+{
+  "dataset_id": "ai4bharat/IndicCorpV2",
+  "config": "indiccorp_v2",
+  "available_splits": [
+    "hin_Deva"
+  ],
+  "indexed_splits": [
+    "hin_Deva"
+  ],
+  "note": "Published IndicCorpV2 config does not list an English split; this index is Hindi-only.",
+  "source_documents": 463,
+  "chunks": 527,
+  "chunk_size_chars": 750,
+  "chunk_overlap_chars": 100,
+  "embedding_model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+  "embedding_model_key": "mpnet",
+  "device": "cpu"
+}

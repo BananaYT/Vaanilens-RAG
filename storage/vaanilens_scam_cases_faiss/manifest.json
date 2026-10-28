@@ -1,0 +1,15 @@
+{
+  "index_type": "cases",
+  "created_at_utc": "2026-10-27T06:59:36.944346+00:00",
+  "records_indexed": 2847,
+  "embedding_model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+  "embedding_model_key": "mpnet",
+  "device": "cpu",
+  "batch_size": 32,
+  "normalized_embeddings": true,
+  "retrieval_score_note": "FAISS score is L2 distance for normalized embeddings; lower is closer, not a probability or confidence percentage.",
+  "data_policy": "Case index contains only the training split; test rows remain held out. Source labels are unreviewed candidate labels.",
+  "source_dataset_id": "bolewara/hinglish-scam-text-dataset",
+  "license": "CC-BY-4.0 for case dataset; see ATTRIBUTION.md",
+  "input_file": "data\\splits\\train.jsonl"
+}

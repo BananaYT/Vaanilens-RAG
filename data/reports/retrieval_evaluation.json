@@ -1,0 +1,62 @@
+{
+  "created_at_utc": "2026-10-27T07:40:17.812871+00:00",
+  "task": "nearest-neighbour majority-vote baseline for source labels",
+  "positive_label": "scam_candidate",
+  "negative_label": "benign_candidate",
+  "k": 5,
+  "test_rows_scored": 711,
+  "index_dir": "storage\\vaanilens_scam_cases_faiss",
+  "index_manifest": "storage\\vaanilens_scam_cases_faiss\\manifest.json",
+  "test_file": "data\\splits\\test.jsonl",
+  "overall": {
+    "count": 711,
+    "accuracy": 0.971871,
+    "precision_scam_candidate": 0.892857,
+    "recall_scam_candidate": 0.961538,
+    "f1_scam_candidate": 0.925926,
+    "false_positive_rate": 0.025818,
+    "confusion_matrix": {
+      "TP": 125,
+      "FP": 15,
+      "TN": 566,
+      "FN": 5
+    }
+  },
+  "by_language_heuristic": {
+    "en-or-other-Latin": {
+      "count": 698,
+      "accuracy": 0.974212,
+      "precision_scam_candidate": 0.896296,
+      "recall_scam_candidate": 0.968,
+      "f1_scam_candidate": 0.930769,
+      "false_positive_rate": 0.024433,
+      "confusion_matrix": {
+        "TP": 121,
+        "FP": 14,
+        "TN": 559,
+        "FN": 4
+      }
+    },
+    "hi-Latn-or-code-mixed": {
+      "count": 13,
+      "accuracy": 0.846154,
+      "precision_scam_candidate": 0.8,
+      "recall_scam_candidate": 0.8,
+      "f1_scam_candidate": 0.8,
+      "false_positive_rate": 0.125,
+      "confusion_matrix": {
+        "TP": 4,
+        "FP": 1,
+        "TN": 7,
+        "FN": 1
+      }
+    }
+  },
+  "limitations": [
+    "The source labels have not been independently audited by this project.",
+    "The source dataset card says its English portion partly derives from a general SMS spam corpus; spam is not always fraud.",
+    "Language tags are heuristic estimates because the source file has no per-row language field.",
+    "This is a retrieval-neighbour baseline, not a trained scam classifier and not evidence of live-call performance.",
+    "A split reduces direct row leakage, but near-duplicate messages across sources/campaigns may still exist."
+  ]
+}
